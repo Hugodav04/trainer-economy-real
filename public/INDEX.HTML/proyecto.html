@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainers Economy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark-custom shadow-sm py-3">
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="C:\Users\hugo1\Escritorio\INFORMÁTICA  2ºAÑO\PROYECTOS\logo.png" alt="Trainers Economy Logo" height="110" class="me-2 rounded-circle border border-2 border-white">
+
+              <span class="fs-4 fw-bold text-white-50">Trainers <span class="text-white">Economy</span></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  </ul>
+          </div>
+      </div>
+  </header>
+
+    <main class="container my-5" id="top">
+        <section class="hero-section text-center py-5 mb-5 rounded-3 shadow-lg">
+            <h1 class="display-4 fw-bold mb-3 text-white">¡Encuentra tus zapatillas al mejor precio!</h1>
+            <p class="lead text-white-50 mb-4">Comparamos precios de las principales tiendas para que ahorres.</p>
+        </section>
+
+        <section class="store-logos-section text-center my-5">
+            <h3 class="mb-4 text-muted">Tiendas que analizamos:</h3>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 store-logos-container">
+                <a href="https://www.courir.es" target="_blank" class="logo-link"><img src="C:\Users\hugo1\Downloads\eaca9a05062a25470ad33f41c2466737525c0f70-removebg-preview.png" alt="Courir" class="store-logo"></a>
+                <a href="https://www.elcorteingles.es" target="_blank" class="logo-link"><img src="C:\Users\hugo1\Downloads\el-corte-ingles-logo-removebg-preview.png" alt="El Corte Inglés" class="store-logo"></a>
+                <a href="https://footdistrict.com" target="_blank" class="logo-link"><img src="C:\Users\hugo1\Downloads\49-foot-district-removebg-preview.png" alt="Footdistrict" class="store-logo"></a>
+                <a href="https://www.footlocker.es" target="_blank" class="logo-link"><img src="C:\Users\hugo1\Downloads\20418af45700880bacae00ff5e99f559-removebg-preview.png" alt="Footlocker" class="store-logo"></a>
+            </div>
+        </section>
+
+        <section id="busqueda" class="search-section card shadow-lg p-4 mb-5 animate__animated animate__fadeInUp">
+            <h2 class="card-title text-center mb-4 text-primary-dark">Buscar Zapatillas <i class="bi bi-search"></i></h2>
+            
+            <div class="brand-filter-icons d-flex flex-wrap justify-content-center align-items-center gap-4 my-4">
+                <a  href="https://www.nike.com/es/" class="brand-icon-link" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" alt="Nike" class="brand-icon">
+                </a>
+                <a href="https://www.adidas.es/" target="_blank" class="brand-icon-link">
+                    <img src="C:\Users\hugo1\Downloads\adidas-logo-0.png" alt="Adidas" class="brand-icon">
+                </a>
+                <a href="https://www.asics.com/es/es-es/" target="_blank" class="brand-icon-link">
+                    <img src="C:\Users\hugo1\Downloads\png-transparent-asics-amazon-com-sneakers-shoe-new-balance-adidas-text-logo-running-thumbnail-removebg-preview.png" alt="Asics" class="brand-icon">
+                </a>
+                <a href="https://www.newbalance.es/" target="_blank" class="brand-icon-link">
+                    <img src="C:\Users\hugo1\Downloads\png-transparent-t-shirt-new-balance-sneakers-logo-clothing-t-shirt-angle-text-logo-thumbnail-removebg-preview.png" alt="New Balance" class="brand-icon">
+                </a>
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <label for="marca" class="form-label">Marca</label>
+                    <select id="marca" name="marca" class="form-select custom-select shadow-sm">
+                        <option value="">Selecciona una Marca</option>
+                        <option value="Nike">Nike</option>
+                        <option value="Adidas">Adidas</option>
+                        <option value="Asics">Asics</option>
+                        <option value="New Balance">New Balance</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="modelo" class="form-label">Modelo</label>
+                    <select id="modelo" name="modelo" class="form-select custom-select shadow-sm">
+                        <option value="">Selecciona un Modelo</option>
+                        </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="orden" class="form-label">Ordenar por Precio</label>
+                    <select id="orden" name="orden" class="form-select custom-select shadow-sm">
+                        <option value="">Sin ordenar</option>
+                        <option value="menor-a-mayor">Menor a Mayor</option>
+                        <option value="mayor-a-menor">Mayor a Menor</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="d-grid">
+                <button class="btn btn-primary-custom btn-lg shadow" type="button" id="buscar-zapatillas-btn">
+                    <span id="button-text">🔍 Buscar</span>
+                    <span id="loading-spinner" class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" style="display: none;"></span>
+                </button>
+            </div>
+            
+            <div id="loading" class="text-center mt-4" style="display: none;">
+              <img src="https://i.pinimg.com/originals/e8/b3/7a/e8b37aa3bee66e219a10398244734017.gif" alt="Cargando..." style="width: 50px; height: 50px; margin-bottom: 10px;">
+              <p class="text-muted"><i class="bi bi-hourglass-split me-2"></i>Buscando las mejores ofertas...</p>
+          </div>
+
+            <div class="row mt-4 justify-content-center" id="resultados-busqueda">
+                </div>
+            <div class="mt-5" id="sugerencias-busqueda">
+                </div>
+        </section>
+        
+        <!-- RESULTADOS -->
+        <div class="row" id="lista-productos"></div>
+    </div>
+
+    <script>
+      async function buscarZapatillas() {
+          const marca = document.getElementById("marca").value;
+          const modelo = document.getElementById("modelo").value;
+          const orden = document.getElementById("orden").value; 
+          
+          const resultadosBusquedaDiv = document.getElementById("resultados-busqueda");
+          resultadosBusquedaDiv.innerHTML = ''; // Limpiar resultados anteriores
+  
+          if (!marca || !modelo) {
+              alert("Por favor, selecciona una marca y un modelo.");
+              return;
+          }
+  
+          document.getElementById("loading").style.display = "block";
+  
+          try {
+              const response = await fetch(`http://localhost:5000/buscar?marca=${encodeURIComponent(marca)}&modelo=${encodeURIComponent(modelo)}`);
+              const data = await response.json();
+  
+              document.getElementById("loading").style.display = "none";
+  
+              if (data.error) {
+                  alert(`Error: ${data.error}`);
+                  resultadosBusquedaDiv.innerHTML = `<p class="text-center text-danger">Error: ${data.error}</p>`;
+              } else {
+                  // --- NUEVO CÓDIGO AQUÍ: MAPEO DE NÚMEROS A NOMBRES DE TIENDAS ---
+                  const storeMap = {
+                      "0": "El Corte Inglés",
+                      "1": "Footlocker",
+                      "2": "Courir",
+                      "3": "Footdistrict"
+                      // Asegúrate de que estos números coincidan con las claves que envía tu backend
+                      // Y que los nombres de las tiendas sean los que quieres mostrar.
+                      // Si tienes más tiendas, añádelas aquí:
+                      // "4": "NombreDeOtraTienda",
+                  };
+                  // --- FIN DEL NUEVO CÓDIGO ---
+  
+                  const productosAgrupados = {};
+  
+                  // Modificado: Ahora iteramos sobre las claves numéricas que envía tu backend
+                  for (const tiendaKey in data) { // tiendaKey será "0", "1", "2", "3", etc.
+                      const producto = data[tiendaKey];
+                      
+                      // --- MODIFICADO: Obtenemos el nombre de la tienda del mapeo ---
+                      const tiendaNombre = storeMap[tiendaKey] || `Tienda ${tiendaKey}`; // Fallback si no está en el mapa
+                      // --- FIN DE LA MODIFICACIÓN ---
+  
+                      if (producto && producto.url) {
+                          const claveProducto = `${producto.marca}-${producto.modelo}`;
+  
+                          if (!productosAgrupados[claveProducto]) {
+                              productosAgrupados[claveProducto] = {
+                                  marca: producto.marca,
+                                  modelo: producto.modelo,
+                                  imagen: producto.imagen, 
+                                  ofertas: []
+                              };
+                          }
+                          productosAgrupados[claveProducto].ofertas.push({
+                              tienda: tiendaNombre, // Usamos el nombre de la tienda del mapeo
+                              id: producto.id,
+                              precio: producto.precio,
+                              url: producto.url
+                          });
+                      } else if (producto && producto.error) {
+                          console.warn(`No se encontraron resultados en ${tiendaNombre}: ${producto.error}`);
+                      }
+                  }
+  
+                  const productosParaMostrar = Object.values(productosAgrupados);
+  
+                  if (productosParaMostrar.length > 0) {
+                      productosParaMostrar.forEach(p => {
+                          if (orden === "menor-a-mayor") {
+                              p.ofertas.sort((a, b) => {
+                                  const precioA = parseFloat(a.precio.replace('€', '').replace(',', '.'));
+                                  const precioB = parseFloat(b.precio.replace('€', '').replace(',', '.'));
+                                  return precioA - precioB;
+                              });
+                          } else if (orden === "mayor-a-menor") {
+                              p.ofertas.sort((a, b) => {
+                                  const precioA = parseFloat(a.precio.replace('€', '').replace(',', '.'));
+                                  const precioB = parseFloat(b.precio.replace('€', '').replace(',', '.'));
+                                  return precioB - precioA;
+                              });
+                          }
+                      });
+  
+                      productosParaMostrar.forEach(productoAgrupado => {
+                          const colDiv = document.createElement('div');
+                          colDiv.classList.add('col-md-4', 'mb-4', 'd-flex'); 
+  
+                          const cardDiv = document.createElement('div');
+                          cardDiv.classList.add('card', 'w-100'); 
+  
+                          const img = document.createElement('img');
+                          img.src = productoAgrupado.imagen;
+                          img.classList.add('card-img-top');
+                          img.alt = `${productoAgrupado.marca} ${productoAgrupado.modelo}`;
+                          img.style.objectFit = 'contain';
+                          img.style.height = '400px';
+  
+                          const title = document.createElement('h5');
+                          title.classList.add('card-title', 'text-center');
+                          title.textContent = `${productoAgrupado.marca} ${productoAgrupado.modelo || ' '}`; 
+  
+                          const cardBody = document.createElement('div');
+                          cardBody.classList.add('card-body');
+                          cardBody.appendChild(title);
+  
+                          const ofertasList = document.createElement('ul');
+                          ofertasList.classList.add('list-group', 'list-group-flush');
+  
+                          productoAgrupado.ofertas.forEach(oferta => {
+                              const listItem = document.createElement('li');
+                              listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+                              
+                              const ofertaText = document.createElement('span');
+                              ofertaText.textContent = `${oferta.tienda}: ${oferta.precio}`; // Aquí se usa el nombre de la tienda
+                              
+                              const productLink = document.createElement('a');
+                              productLink.href = oferta.url;
+                              productLink.target = '_blank';
+                              productLink.classList.add('btn', 'btn-sm', 'btn-primary');
+                              productLink.textContent = 'Ver';
+  
+                              listItem.appendChild(ofertaText);
+                              listItem.appendChild(productLink);
+                              ofertasList.appendChild(listItem);
+                          });
+  
+                          cardDiv.appendChild(img);
+                          cardDiv.appendChild(cardBody);
+                          cardDiv.appendChild(ofertasList);
+                          colDiv.appendChild(cardDiv);
+                          resultadosBusquedaDiv.appendChild(colDiv);
+                      });
+                  } else {
+                      resultadosBusquedaDiv.innerHTML = `<p class="text-center text-muted">No se encontraron resultados para "${marca} - ${modelo}" en ninguna de las tiendas.</p>`;
+                  }
+              }
+  
+          } catch (error) {
+              console.error("Hubo un error al comunicarse con el servidor:", error);
+              document.getElementById("loading").style.display = "none";
+              resultadosBusquedaDiv.innerHTML = `<p class="text-center text-danger">Hubo un error al buscar las zapatillas. Por favor, asegúrate de que tu backend esté funcionando correctamente.</p>`;
+          }
+      }
+  
+      // EL RESTO DE TU JAVASCRIPT PERMANECE SIN CAMBIOS
+      // (filtrar, DOMContentLoaded, modelosPorMarca)
+      document.addEventListener('DOMContentLoaded', function () {
+          const buscarBtn = document.getElementById('buscar-zapatillas-btn');
+          buscarBtn.addEventListener('click', buscarZapatillas);
+  
+          const marcaSelect = document.getElementById('marca');
+          const modeloSelect = document.getElementById('modelo');
+          const modelosPorMarca = {
+              'Nike': [
+                  'Air Max 90',
+                  'Air Force 1',
+                  'Dunk Low',
+                  'Air zoom',
+                  'Zoom Vomero',
+                  'Air Pegasus'
+              ],
+              'Adidas': [
+                  'Campus 00s',
+                  'Gazelle',
+                  'Samba OG',
+                  'Handball spezial',
+                  'sl 72 rs'
+              ],
+              'Asics': [
+                  'GEL-QUANTUM',
+                  'GEL 1130',
+                  'Gel-Venture 6',
+                  'Kinetic fluent',
+                  'GT-2160',
+                  'GEL-NYC'
+              ],
+              'New Balance': [
+                  '530',
+                  '327',
+                  '9060',
+              ]
+          };
+  
+          marcaSelect.addEventListener('change', () => {
+              const marcaSeleccionada = marcaSelect.value;
+              modeloSelect.innerHTML = '<option value="">Todos</option>';
+              if (marcaSeleccionada && modelosPorMarca[marcaSeleccionada]) {
+                  modelosPorMarca[marcaSeleccionada].forEach(modelo => {
+                      const option = document.createElement('option');
+                      option.value = modelo;
+                      option.textContent = modelo;
+                      modeloSelect.appendChild(option);
+                  });
+              }
+          });
+      });
+  
+      // Filtro por marca usando los iconos
+      function filtrar(marca) {
+          document.getElementById("marca").value = marca;
+          // La búsqueda se activará cuando el usuario haga clic en el botón "Buscar"
+      }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
