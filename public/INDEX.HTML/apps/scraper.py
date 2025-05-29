@@ -175,9 +175,10 @@ def guardar_csv(resultados, nombre_base="resultados"):
 def guardar_mysql(resultados):
     try:
         conexion = mysql.connector.connect(
-            host="localhost",
-            port=3307,
+           host="hc2mxg.stackhero-network.com",
+            port=7279,
             user="root",
+            password="Mdp63lfnSEoWayptsy6bNkFstwXSvmeB",
             database="trainers"
 
         )
