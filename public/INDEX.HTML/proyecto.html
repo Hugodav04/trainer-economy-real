@@ -127,7 +127,7 @@
           document.getElementById("loading").style.display = "block";
   
           try {
-              const response = await fetch(`http://localhost:5000/buscar?marca=${encodeURIComponent(marca)}&modelo=${encodeURIComponent(modelo)}`);
+              const response = await fetch(`https://y4p074.stackhero-network.com/buscar?marca=${encodeURIComponent(marca)}&modelo=${encodeURIComponent(modelo)}`);
               const data = await response.json();
   
               document.getElementById("loading").style.display = "none";
