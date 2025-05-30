@@ -171,38 +171,49 @@ body {
 }
 
 /* Iconos de marcas para filtrar */
-.brand-filter-icons .brand-icon-link {
+.brand-filter-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.brand-icon-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px; /* Tamaño del área del icono */
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     border-radius: 10px;
+    overflow: hidden;
     transition: all 0.3s ease;
-    overflow: hidden; /* Asegura que la imagen no se salga */
     padding: 10px;
 }
 
-.brand-filter-icons .brand-icon-link:hover {
+.brand-icon-link:hover {
     background-color: #e9ecef;
     border-color: #007bff;
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
 }
 
-.brand-filter-icons .brand-icon {
-    max-width: 100%; /* Ajusta la imagen dentro del cuadrado */
+.brand-icon {
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     filter: grayscale(50%);
     transition: filter 0.3s ease;
 }
 
-.brand-filter-icons .brand-icon-link:hover .brand-icon {
+.brand-icon-link:hover .brand-icon {
     filter: grayscale(0%);
 }
+
 
 /* Campos de formulario */
 .form-label {
