@@ -182,6 +182,7 @@ body {
     border-radius: 10px;
     transition: all 0.3s ease;
     overflow: hidden; /* Asegura que la imagen no se salga */
+    padding: 10px;
 }
 
 .brand-filter-icons .brand-icon-link:hover {
@@ -192,8 +193,8 @@ body {
 }
 
 .brand-filter-icons .brand-icon {
-    max-width: 80%; /* Ajusta la imagen dentro del cuadrado */
-    max-height: 80%;
+    max-width: 100%; /* Ajusta la imagen dentro del cuadrado */
+    max-height: 100%;
     object-fit: contain;
     filter: grayscale(50%);
     transition: filter 0.3s ease;
