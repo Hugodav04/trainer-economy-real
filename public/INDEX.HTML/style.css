@@ -1,6 +1,4 @@
-
-
-    body {
+body {
         background-color: #7bade7;
     }
     /* Estilo del logo */
@@ -57,17 +55,6 @@
         transition: 0.3s;
       }
       
-
-
-
-
-
-
-
-
-
-
-
 
       /* Importar una fuente moderna de Google Fonts */
 body {
@@ -205,12 +192,11 @@ body {
 }
 
 .brand-filter-icons .brand-icon {
-    max-width: 100px; /* Ajusta la imagen dentro del cuadrado */
+    max-width: 80%; /* Ajusta la imagen dentro del cuadrado */
     max-height: 80%;
     object-fit: contain;
     filter: grayscale(50%);
     transition: filter 0.3s ease;
-    height: auto;
 }
 
 .brand-filter-icons .brand-icon-link:hover .brand-icon {
